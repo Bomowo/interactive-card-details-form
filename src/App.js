@@ -3,37 +3,42 @@ import Field from "./components/Field";
 
 function App() {
   return (
-    <div>
+    <div className="row">
+    <div className="col-6">
+
+    </div>
+    <div className='col-6'>
       <Field
         type="text"
-        id="test"
-        name="Test name:"
-        placeholder="Testing placeholder"
+        id="name"
+        name="Cardholder name:"
+        placeholder="e.g. Jane Appleseed"
+      />
+      <Field
+        type="text"
+        id="cardNumber"
+        name="Card Number:"
+        placeholder="e.g. 1234 5678 9123 0000"
       />
       <Field
         type="text"
         id="test"
-        name="Test name:"
-        placeholder="Testing placeholder"
+        name="Exp. date (mm/yy)"
+        placeholder="MM"
       />
       <Field
         type="text"
         id="test"
-        name="Test name:"
-        placeholder="Testing placeholder"
+        placeholder="YY"
       />
       <Field
         type="text"
         id="test"
-        placeholder="Testing placeholder"
+        name="Cvc"
+        placeholder="e.g. 123"
       />
-      <Field
-        type="text"
-        id="test"
-        name="Test name:"
-        placeholder="Testing placeholder"
-      />
-      <button></button>
+      <button>Confirm</button>
+      </div>
     </div>
   );
 }
